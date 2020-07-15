@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TILES|HOME_DECOR</title>
+<style>
+	ul {
+	  	list-style-type: none;/*to remove bullet points*/
+		margin: 0;
+		padding: 0;
+		overflow: hidden;/*to retain scroll option while navmenu is overflow*/
+  		background-color: #333;
+	   }
+
+	li {
+	  float: right;
+	  }
+
+li a {
+  display: block;/*for horizontal alignment*/
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  
+}
+
+/* Change the link color (black) on hover */
+li a:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+.active {
+  background-color: #1091EB;
+}
+.emj1
+{
+	position: absolute;
+	margin-left: 5px;
+	mix-blend-mode: difference;
+
+}
+#responsive {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+
+}
+.button {
+	background-color: black;   /*button attributes*/
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 12px;
+}
+.button:hover
+{
+	background-color: #4CAF50; /* Green */
+}
+.button1 {
+	background-color: white;   /*button attributes*/
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 12px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin-left: 20px;
+  text-align: center;
+  font-family: arial;
+  float: left;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+hr.new1 {
+  border-top: 1px solid red;
+}
+
+
+.zoom1 {
+  padding: 50px;
+  background:url("d3.jpg");
+  background-size: auto;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom1:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.zoom2 {
+  padding: 50px;
+  background:url("d4.jpg");
+  background-size: auto;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom2:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.zoom3 {
+  padding: 50px;
+  background:url("d5.jpg");
+  background-size: auto;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom3:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.zoom4 {
+  padding: 50px;
+  background:url("d6.jpg");
+  background-size: auto;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom4:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.zoom5 {
+  padding: 50px;
+  background:url("d7.jpg");
+  background-size: auto;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom5:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.zoom6 {
+  padding: 50px;
+  background:url("d8.jpg");
+  background-size: auto;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom6:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.clear
+{
+	clear: both;
+}
+.tileschart
+{
+	position: absolute;
+	padding:80px;
+	border:solid 5px black;
+	padding:20px;
+	align-content: center;
+	height:auto;
+	width: 100%;
+	overflow-x: auto;
+	border-collapse: collapse;
+}
+/* flip card attributes*/
+.button2 {
+	background-color: black;   /*button attributes*/
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 12px;
+}
+.button2:hover
+{
+	opacity:0.7; /* Green */
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<section>
+	<img src="logo.jpeg" class="emj1" id="responsive" style="width:100px; height:40px;">
+	<ul style="font-size: 2vw;">
+		<li><a href="about.html" >About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="tiles.html">Tiles</a></li>
+		<li><a href="proj.html" class="active">Home</a></li>
+	</ul>
+</section>
+<!-- Carousel starts here -->
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+     <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="wall1.jpg" alt="Military Helmets" style="width:100%;">
+        <div class="carousel-caption">
+          <h1 style="float: right;color: black;"> HOME DECOR </h1>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="wall2.jpg" alt="Water" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>TILES</h3>
+          <button type="button" style="color:white;" class="button"><bold><a href="tiles.html">VIEW</a></bold></button>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="wall3.jpg" alt="Fire" style="width:100%;">
+        <div class="carousel-caption">
+          <button type="button" style="color:white;" class="button1"><bold><a href="contact.html">Contact</a></bold></button>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="wall4.jpg" alt="Candle" style="width:100%;">
+        <div class="carousel-caption">
+          <h3 style="color: white;text-decoration: none;"><a href="about.html">HOME DECOR TILES</a></h3>
+          <p>Thank you for all the love and support</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+ <!-- product card starts here -->
+ <!-- product card1 -->
+<!-- product card1 -->
+<hr style="border-top: 1px solid red;">
+
+<section class="tileschart">
+	<p style="background-color: black;color:white;text-align: center;">SAMPLE TILES DESIGN</p>
+<div class="card">
+	<div class="zoom1"></div><!-- zoom hover effect-->
+</div>
+
+<div class="card">
+	<div class="zoom2"></div><!-- zoom hover effect-->
+</div>
+
+<div class="card">
+	<div class="zoom3"></div><!-- zoom hover effect-->
+</div>
+
+<div class="card">
+	<div class="zoom4"></div><!-- zoom hover effect-->
+</div>
+
+<div class="card">
+	<div class="zoom5"></div><!-- zoom hover effect-->
+</div>
+
+<div class="card">
+	<div class="zoom6"></div><!-- zoom hover effect-->
+</div>
+
+<div class="clear"></div>
+
+<center><button type="button" style="color:white;" class="button2"><bold><a href="tiles.html">VIEW</a></bold></button></center>
+</section>
+<div class="card">
+<!-- card flip-->
+<hr style="border-top: 4px solid blue;">
+<div>
+	
+</div>
+
+
+</body>
+</html>

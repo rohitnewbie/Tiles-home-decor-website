@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tiles</title>
+	<style>
+		ul {
+	  	list-style-type: none;/*to remove bullet points*/
+		margin: 0;
+		padding: 0;
+		overflow: hidden;/*to retain scroll option while navmenu is overflow*/
+  		background-color: #333;
+	   }
+
+	li {
+	  float: right;
+	  text-decoration: none;
+	  }
+
+li a {
+  display: block;/*for horizontal alignment*/
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+/* Change the link color (black) on hover */
+li a:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+.active {
+  background-color: #1091EB;
+}
+.emj1
+{
+	position: absolute;
+	margin-left: 5px;
+	mix-blend-mode: difference;
+
+}
+#responsive {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+
+}
+/* Responsive cutout effect */
+.image-container {
+  background-image: url("tile.jpg");
+  background-size: cover;
+  position: relative;
+  height: 500px;
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-size: 8vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: multiply;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  float: left;
+  margin-left:60px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.clear
+{
+	clear: both;
+}
+</style>
+</head>
+<body>
+	<!--nav-bar-->
+	<section>
+	<img src="logo.jpeg" class="emj1" id="responsive" style="width:100px; height:40px;">
+	<ul style="font-size: 2vw;">
+		<li><a href="about.html" >About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="tiles.html" class="active">Tiles</a></li>
+		<li><a href="proj.html">Home</a></li>
+	</ul>
+</section>
+<!--nav-bar-->
+<!--container-->
+<div class="image-container">
+  <div class="text">TILES</div>
+</div>
+<!--container ends-->
+<!--product card-->
+<hr style="position: relative;margin-top: 20px;background-color: black;height:5px;">
+<section style="padding-left:10px;padding-top:30px;position:relative;">
+ <div class="card">
+<!--flip card-->
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="d2.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>TILE-1</h1> 
+      <p>135 * 145</p> 
+    </div>
+  </div>
+</div>
+<!--flip card end-->
+  <h1>Granite Finish Wall</h1>
+  <p class="price">Rs 95/m2</p>
+  <p>Hover on image for measurement and exact dimension.Sold by TilesDecorByRohit</p>
+  <p><button>Add to Cart</button></p>
+</div>
+<!--product card end-->
+ <div class="card">
+<!--flip card-->
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="d1.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>TILE-2</h1> 
+      <p>129 * 164</p> 
+    </div>
+  </div>
+</div>
+<!--flip card end-->
+  <h1>Lightone Block wall</h1>
+  <p class="price">Rs 44/m2</p>
+  <p>Hover on image for measurement and exact dimension.Sold by TilesDecorByRohit</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+
+ <div class="card">
+<!--flip card-->
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="d3.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>TILE-3</h1> 
+      <p>123 * 190</p> 
+    </div>
+  </div>
+</div>
+<!--flip card end-->
+  <h1>Wood Finish Wall</h1>
+  <p class="price">Rs 78/m2</p>
+  <p>Hover on image for measurement and exact dimension.Sold by TilesDecorByRohit</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+ <div class="card">
+<!--flip card-->
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="d4.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>TILE-4</h1> 
+      <p>156 * 179</p> 
+    </div>
+  </div>
+</div>
+<!--flip card end-->
+  <h1>Square block Wall</h1>
+  <p class="price">Rs 76/m2</p>
+  <p>Hover on image for measurement and exact dimension.Sold by TilesDecorByRohit</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</section>
+<div class="clear"></div>
+<hr style="position: relative;margin-top: 20px;background-color: black;height:5px;">
+<section style="padding-left:10px;padding-top:30px;position:relative;">
+ <div class="card">
+<!--flip card-->
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="d5.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>TILE-5</h1> 
+      <p>189 * 166</p> 
+    </div>
+  </div>
+</div>
+<!--flip card end-->
+  <h1>Bathroom Tiles</h1>
+  <p class="price">Rs 47/m2</p>
+  <p>Hover on image for measurement and exact dimension.Sold by TilesDecorByRohit</p>
+  <p><button>Add to Cart</button></p>
+</div>
+<!--product card end-->
+ <div class="card">
+<!--flip card-->
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="d6.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>TILE-6</h1> 
+      <p>190 * 198</p> 
+    </div>
+  </div>
+</div>
+<!--flip card end-->
+  <h1>Stone Finish Wall</h1>
+  <p class="price">Rs 35/m2</p>
+  <p>Hover on image for measurement and exact dimension.Sold by TilesDecorByRohit</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+
+ <div class="card">
+<!--flip card-->
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="d7.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>TILE-7</h1> 
+      <p>133 * 167</p> 
+    </div>
+  </div>
+</div>
+<!--flip card end-->
+  <h1>Wall Tiles Kitchen</h1>
+  <p class="price">Rs 55/m2</p>
+  <p>Hover on image for measurement and exact dimension.Sold by TilesDecorByRohit.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+ <div class="card">
+<!--flip card-->
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="d8.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>TILE-8</h1> 
+      <p>125 * 154</p> 
+  </div>
+</div>
+<!--flip card end-->
+  <h1>Blue Glass stone Wall</h1>
+  <p class="price">Rs 45/m2</p>
+  <p>Hover on image for measurement and exact dimension.Sold by TilesDecorByRohit.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>contact</title>
+	<style>
+	ul {
+	  	list-style-type: none;/*to remove bullet points*/
+		margin: 0;
+		padding: 0;
+		overflow: hidden;/*to retain scroll option while navmenu is overflow*/
+  		background-color: #333;
+	   }
+
+	li {
+	  float: right;
+	  text-decoration: none;
+	  }
+
+li a {
+  display: block;/*for horizontal alignment*/
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+/* Change the link color (black) on hover */
+li a:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+.active {
+  background-color: #1091EB;
+}
+.emj1
+{
+	position: absolute;
+	margin-left: 5px;
+	mix-blend-mode: difference;
+
+}
+#responsive {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+
+}
+.parallax {
+  /* The image used */
+  background-image: url("contactback.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ /* Contact form attributes */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+
+}
+</style>
+</head>
+<body>
+<section>
+	<img src="logo.jpeg" class="emj1" id="responsive" style="width:100px; height:40px;">
+	<ul style="font-size: 2vw;">
+		<li><a href="about.html" >About</a></li>
+		<li><a href="contact.html" class="active">Contact</a></li>
+		<li><a href="tiles.html">Tiles</a></li>
+		<li><a href="proj.html">Home</a></li>
+	</ul>
+</section>
+
+
+<div class="parallax"></div>
+
+<h3>Contact Form</h3>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Mail Id</label>
+    <input type="text" id="mail" name="mailid" placeholder="Your email-id">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">India</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="usa">Dubai</option>
+      <option value="usa">Uk</option>
+      <option value="usa">Australia</option>
+    </select>
+
+    <label for="subject">Provide your drive link of tiles image</label>
+    <textarea id="subject" name="subject" placeholder="Write suggestions here...." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
